@@ -4,4 +4,8 @@
 
 tasks:
   - init: npm install
-    command: npm run dev
+    command: npm run dev && npm run build
+
+ports:
+  - port: 3000
+    onOpen: open-browser
